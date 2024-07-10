@@ -122,6 +122,9 @@ input:focus {
 
     box-shadow: none;
 }
+input:focus{
+    outline: none;
+}
 
 .gap-8 {
     gap: 8px;
@@ -176,6 +179,7 @@ input:focus {
     margin-left: 8px;
     margin-right: 8px;
     margin-top: 16px;
+    white-space: nowrap;
 }
 
 .line {
@@ -345,8 +349,7 @@ input:focus {
 }
 
 .blue-circle-box {
-    min-height: 500px;
-    max-width: 500px;
+   
     width: 100%;
     display: flex;
     border-radius: 50%;
@@ -361,12 +364,17 @@ input:focus {
     justify-content: center;
 }
 
+.svg {
+    cursor: pointer;
+}
+
 /* --------------- */
-@media(min-width:576px){
-    .link-image{
-    max-width: 247px;
+@media(min-width:576px) {
+    .link-image {
+        max-width: 247px;
     }
 }
+
 @media (min-width:768px) {
     .maxw-md-340 {
         max-width: 340px;
@@ -374,6 +382,7 @@ input:focus {
 }
 
 @media(min-width:992px) {
+
     .pageLogo {
         display: flex;
         justify-content: start;
@@ -421,5 +430,9 @@ input:focus {
         background-repeat: no-repeat;
         background-size: cover;
     }
+        .blue-circle-box {
+            min-height: 500px;
+            max-width: 500px;
+        }
 
 }
