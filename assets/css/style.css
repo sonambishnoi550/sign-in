@@ -422,6 +422,17 @@ input:focus{
         margin-right: unset;
     }
 }
+@media(max-width:768px){
+    .box1{
+        flex-direction: column;
+    }
+    .line{
+        width: 100%;
+    }
+        .line1 {
+            width: 100%;
+        }
+}
 
 @media(max-width: 992px) {
     .bluebg {
